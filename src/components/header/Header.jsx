@@ -32,7 +32,7 @@ export const Header = () => {
                             </li>
                         </ul>
                     </div>
-                    <img className="container-img-header" src="src/assets/header.jpg" alt="Cover_page" />
+                    <img className="container-img-header" src="assets/header.jpg" alt="Cover_page" />
                     <div className="container-text">
                         <p className='container-text__1' >¡Hola! soy</p>
                         <p className='container-text__2' >Sergio cano </p>
