@@ -1,0 +1,50 @@
+@import '../../styles/base/mixinResponse';
+
+.container-root {
+    height: 100vh;
+    background-color: rgb(41, 41, 41);
+    color: rgb(151, 147, 147);
+    font-family: Teko, sans-serif;
+
+    &__main {
+        width: 100%;
+        display: flex;
+
+        &__navbar {
+            position: fixed;
+            height: 100%;
+            width: 22%;
+
+            @include mobile {
+                width: 0%;
+                display: none;
+            }
+        }
+
+        &__home {
+            width: 78%;
+            padding-left: 22%;
+
+            @include mobile {
+                width: 100%;
+                padding-left: 0%;
+            }
+
+            .container-body {
+                border-left: 1px solid #605c4e80;
+
+                @include desktop {
+                    padding: 0px 40px;
+                }
+
+                @include tablet {
+                    padding: 0px 30px;
+                }
+
+                @include mobile {
+                    padding: 0px 15px;
+                }
+            }
+        }
+    }
+}

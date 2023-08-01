@@ -1,0 +1,138 @@
+@import '../../styles/base/mixinResponse';
+
+.container-section {
+    border-bottom: 1px solid #605c4e80;
+    color: #fff;
+    height: auto;
+    padding: 30px 0px;
+
+    .container-hero {
+        width: 100%;
+        display: flex;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+}
+
+.container-info {
+    margin: 0;
+    width: 60%;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-weight: 400;
+        line-height: 1.2;
+
+        @include tablet {
+            font-size: 40px;
+        }
+
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+
+    &__presentaction {
+        font-family: Montserrat, sans-serif;
+        font-size: 17px;
+        font-weight: 100;
+        max-width: auto;
+        padding: 15px 0px;
+    }
+}
+
+.info-personal {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: auto;
+    list-style: none;
+    padding: 10px 0px;
+
+    li {
+        margin: 5px;
+
+        span {
+            color: #cba982;
+        }
+    }
+}
+
+.container-photo-me {
+    width: 40%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+        font-size: 40px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+
+    img {
+        border-radius: 10px;
+        box-shadow: 5px 2px rgb(70 68 68 / 37%);
+        max-height: 340px;
+        max-width: 280px;
+
+        @include tablet {
+            border-radius: 10px;
+            height: auto;
+            width: 90%;
+        }
+
+        @include mobile {
+            border-radius: 10px;
+            height: auto;
+            width: 90%;
+        }
+    }
+}
+
+.container-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+
+    .buttom-view-curriculum {
+        background-color: #ad8b63;
+        border: 2px solid #cba990;
+        box-shadow: 2px 3px rgb(70 68 68 / 37%);
+        display: inline-block;
+        color: #ffff;
+        font-family: Open Sans, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 45px;
+        padding: 0 35px;
+        position: relative;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: width 2s;
+        transition-timing-function: cubic-bezier(.1, .7, 1, .1);
+        z-index: 1;
+        transition: background-color 0.5s ease;
+
+        &:hover {
+            transition: background-color 0.5s ease;
+            background-color: #a2733e;
+            cursor: pointer;
+        }
+
+        @include mobile {
+            align-items: center;
+        }
+    }
+}

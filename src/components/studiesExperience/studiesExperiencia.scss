@@ -1,0 +1,41 @@
+@import '../../styles/base/mixinResponse';
+
+.seccion-studies-experiencia {
+    border-bottom: 1px solid #605c4e80;
+    color: #fff;
+    height: auto;
+    margin: 15px 0px;
+    padding-bottom: 30px;
+
+    @include mobile {
+        margin: 0px 0px;
+    }
+}
+
+.container-section-studies-experiencia {
+    display: flex;
+    width: 100%;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 50%;
+        margin: 10px 15px 10px 10px;
+
+        @include mobile {
+            width: 100%;
+            margin: 5px 5px 5px 5px;
+        }
+
+        h2 {
+            font-size: 50px;
+            text-align: center;
+
+            @include mobile {
+                font-size: 30px;
+            }
+        }
+    }
+}

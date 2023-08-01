@@ -1,0 +1,36 @@
+//Setting globlal css
+* {
+  background: rgb(41, 41, 41);
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 9px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(43, 43, 43);
+}
+
+body::-webkit-scrollbar-track:hover {
+  background: rgb(43, 43, 43);
+}
+
+body::-webkit-scrollbar-track:active {
+  background: rgb(43, 43, 43);
+}

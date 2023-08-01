@@ -1,0 +1,55 @@
+@import '../../styles/base/mixinResponse';
+
+.seccion-proyect {
+    border-bottom: 1px solid #605c4e80;
+    height: auto;
+    color: #fff;
+
+    .container-swiper {
+        .container {
+            h2 {
+                font-size: 40px;
+                margin: 0;
+                padding-left: 0;
+                text-align: center;
+
+                @include mobile {
+                    font-size: 30px;
+                }
+            }
+
+            .container-name-proyecto {
+                margin-top: 1000px;
+            }
+        }
+    }
+}
+
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+    background-color: transparent;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

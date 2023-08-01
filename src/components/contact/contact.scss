@@ -1,0 +1,126 @@
+@import '../../styles/base/mixinResponse';
+
+.Toastify__toast-body {
+    background-color: transparent;
+
+    div {
+        background-color: transparent;
+
+    }
+
+    svg {
+        background-color: transparent;
+    }
+}
+
+.Toastify__toast-container {
+    background-color: transparent;
+}
+
+svg {
+    background-color: transparent;
+}
+
+.section-contact {
+    border-bottom: 1px solid #605c4e80;
+    color: #fff;
+    height: auto;
+    margin: 0 15px 30px;
+    padding-bottom: 30px;
+
+    @include mobile {
+        width: 100%;
+        margin: 5px 5px 5px 0px;
+    }
+}
+
+.container {
+    height: auto;
+
+    h2 {
+        font-size: 40px;
+        margin: 0;
+        padding-left: 0;
+        text-align: center;
+
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+}
+
+.container-contact-form {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        padding: 0px;
+    }
+
+    @include mobile {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+        padding: 0px;
+    }
+
+    label {
+        color: #979393;
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        display: inline-block;
+    }
+
+    input {
+        background-color: #222;
+        color: #979393;
+        height: 40px;
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+    }
+
+    textarea {
+        background-color: #222;
+        color: #979393;
+        font-size: 17px;
+        overflow: auto;
+        font-family: inherit;
+        line-height: 1.15;
+        margin: 0;
+        height: 205px;
+        resize: vertical;
+    }
+
+    button {
+        background-color: #ad8b63;
+        border: 2px solid #a5a58d;
+        border-radius: 5px;
+        color: #fff;
+        font-family: Open Sans, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        height: 50px;
+        letter-spacing: 10px;
+        margin-top: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: margin-left 4s 1s;
+        transition: background-color 0.5s ease;
+
+        &:hover {
+            transition: background-color 0.5s ease;
+            background-color: #a2733e;
+            cursor: pointer;
+        }
+    }
+}
