@@ -8,8 +8,8 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 import { Navigation, EffectFade, Pagination, Autoplay } from "swiper";
-import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
+
+import headerImg from '../../assets/header.jpg';
 
 export const Proyects = () => {
     return (
@@ -34,7 +34,7 @@ export const Proyects = () => {
                         {[1, 2, 3, 4, 5, 6].map((item, index) => (
                             <SwiperSlide key={index}>
                                 <div className="container-header">
-                                    <img className="container-img-header" src="assets/header.jpg" alt="Cover_page" />
+                                    <img className="container-img-header" src={headerImg} alt="Cover_page" />
                                     <div className="container-text">
                                         <p className='container-text__1' >¡Hola! soy</p>
                                         <p className='container-text__2' >Sergio cano </p>

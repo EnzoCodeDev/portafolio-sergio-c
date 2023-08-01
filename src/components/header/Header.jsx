@@ -2,6 +2,7 @@ import React from 'react'
 import './header.scss';
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import headerImg from '../../assets/header.jpg';
 
 export const Header = () => {
     return (
@@ -32,7 +33,7 @@ export const Header = () => {
                             </li>
                         </ul>
                     </div>
-                    <img className="container-img-header" src="assets/header.jpg" alt="Cover_page" />
+                    <img className="container-img-header" src={headerImg} alt="Cover_page" />
                     <div className="container-text">
                         <p className='container-text__1' >¡Hola! soy</p>
                         <p className='container-text__2' >Sergio cano </p>
