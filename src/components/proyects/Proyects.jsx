@@ -51,8 +51,8 @@ export const Proyects = () => {
                                 <div className="container-header">
                                     <img className="container-img-header" src={item['img']} alt="Cover_page" />
                                     <div className="container-text">
-                                        <p className='container-text__2' >{item['name']}</p>
-                                        <p className='container-text__1' >{item['descripcion']} </p>
+                                        <p className='container-text__2' style={{ backgroundColor: 'transparent' }} >{item['name']}</p>
+                                        <p className='container-text__1' style={{ backgroundColor: 'transparent' }} >{item['descripcion']} </p>
                                         <a href={item['url']} target="_blank" rel="noopener noreferrer" title={item['name']}><p className='container-text__1' >Ver </p></a>
                                     </div>
                                 </div>
