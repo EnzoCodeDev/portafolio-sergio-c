@@ -11,7 +11,22 @@ import { Navigation, EffectFade, Pagination, Autoplay } from "swiper";
 
 import headerImg from '../../assets/header.jpg';
 
+import imgMajos from '../../assets/proyects/majos.png';
+
+import archivoPDF from '../../assets/Curriculum.pdf';
+
 export const Proyects = () => {
+    let proyects = [{
+        url: 'https://sergiodavidcano.github.io/majo-s-store-react/',
+        img: imgMajos,
+        name: "Majo's",
+        descripcion: 'Tienda oficial de majos',
+    }, {
+        url: 'https://sergiodavidcano.github.io/portafolio-sergio-c/',
+        img: headerImg,
+        name: "Portafolio Sergio Cano",
+        descripcion: 'Mi portafolio de presentación personal',
+    }];
     return (
         <section id="proyect" className="seccion-proyect">
             <div className='container-swiper'>
@@ -31,14 +46,14 @@ export const Proyects = () => {
                         modules={[Autoplay, Navigation, EffectFade, Pagination]}
                         className="mySwiper"
                     >
-                        {[1, 2, 3, 4, 5, 6].map((item, index) => (
+                        {proyects.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <div className="container-header">
-                                    <img className="container-img-header" src={headerImg} alt="Cover_page" />
+                                    <img className="container-img-header" src={item['img']} alt="Cover_page" />
                                     <div className="container-text">
-                                        <p className='container-text__1' >¡Hola! soy</p>
-                                        <p className='container-text__2' >Sergio cano </p>
-                                        <p className='container-text__3' >Programador de software</p>
+                                        <p className='container-text__2' >{item['name']}</p>
+                                        <p className='container-text__1' >{item['descripcion']} </p>
+                                        <a href={item['url']} target="_blank" rel="noopener noreferrer" title={item['name']}><p className='container-text__1' >Ver </p></a>
                                     </div>
                                 </div>
                             </SwiperSlide>
