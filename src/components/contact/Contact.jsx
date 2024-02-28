@@ -62,8 +62,9 @@ export const Contact = () => {
             return;
         }
 
-        emailjs.sendForm('service_jv6fdnf', 'template_o38t54i', e.target, 'pemNiMbrzoP2sS9IH')
+        emailjs.sendForm('service_2316mss', 'template_o38t54i', e.target, 'pemNiMbrzoP2sS9IH')
             .then((res) => {
+                console.log(res);
                 toast.success("Se ha enviado el email correctamente!", {
                     position: "bottom-center",
                     autoClose: 4000,
@@ -76,6 +77,7 @@ export const Contact = () => {
                 });
                 console.log(res);
             }).catch((error) => {
+                console.log(error);
                 toast.error("Hubo un error al enviar el email!", {
                     position: "bottom-center",
                     autoClose: 4000,

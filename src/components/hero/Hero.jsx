@@ -23,7 +23,7 @@ export const Hero = () => {
               <span>Edad : </span>{moment().diff('2001-01-02', 'years')} {' '} años
             </li>
             <li>
-              <span>Dirección :</span> Valle del Cauca, Colombia
+              <span>Contacto :</span> 318 732 4634
             </li>
             <li>
               <span>Correo electrónico:</span> sergio0201david@gmail.com

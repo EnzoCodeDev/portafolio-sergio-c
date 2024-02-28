@@ -22,7 +22,7 @@ export const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/sergio-cano-b3392b22a" rel="noreferrer" target="_blank">
+                                <a href="https://www.linkedin.com/in/sergio-cano-mejia-b3392b22a" rel="noreferrer" target="_blank">
                                     <FaLinkedin className="icon" style={{ color: 'rgb(253, 253, 253)' }} />
                                 </a>
                             </li>
