@@ -17,7 +17,7 @@ export const Hero = () => {
           <hr />
           <ul className="info-personal">
             <li>
-              <span>Nombre :</span> Sergio David  Cano
+              <span>Nombre :</span> Sergio David Cano Mejía
             </li>
             <li>
               <span>Edad : </span>{moment().diff('2001-01-02', 'years')} {' '} años

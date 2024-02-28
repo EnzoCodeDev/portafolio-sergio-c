@@ -36,7 +36,7 @@ export const Header = () => {
                     <img className="container-img-header" src={headerImg} alt="Cover_page" />
                     <div className="container-text">
                         <p className='container-text__1' >¡Hola! soy</p>
-                        <p className='container-text__2' >Sergio cano </p>
+                        <p className='container-text__2' >Sergio Cano </p>
                         <p className='container-text__3' >Programador de software</p>
                     </div>
                 </div>
